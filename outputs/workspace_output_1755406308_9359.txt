@@ -1,0 +1,16 @@
+function debugScript() {
+    const outputContent = document.querySelector('.output-content');
+    
+    // Add debugging message to output
+    outputContent.innerHTML += `\n\n> Debugging script...\n`;
+    outputContent.innerHTML += `> Setting breakpoints...\n`;
+    outputContent.innerHTML += `> Starting debug session...\n`;
+    outputContent.innerHTML += `> Debug session started (simulated)\n`;
+    
+    // Scroll to bottom of output
+    outputContent.scrollTop = outputContent.scrollHeight;
+}
+
+// Stop script
+function stopScript() {
+    const outputContent = document.querySelector('.output-content');
